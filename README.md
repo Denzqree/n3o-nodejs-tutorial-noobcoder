@@ -1,6 +1,2 @@
-# n3o-freecodecamp-nodejs-tutorials
-A collection of samples from the freeCodeCamp's tutorial on Node.js
-
-
-! ONGOING !
-•••••••••
+# n3o-nodejs-tutorial-noobcoder
+A collection of exercises from the freeCodeCamp's tutorial on Node.js by NoobCoder
