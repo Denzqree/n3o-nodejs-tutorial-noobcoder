@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="public/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Main CSS -->
+    <link href="public/css/stylesheet.css" rel="stylesheet">
+
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="public/js/bootstrap.bundle.min.js"></script>
+
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Custom JS -->
+    <script src="public/js/custom.js"></script>
+
+    <!-- font-awesome -->
+    <script src="https://kit.fontawesome.com/68b983447f.js" crossorigin="anonymous"></script>
+
+    <title>Daniel Madeira > Portfolio 2021 > v2.0</title>
+</head>
+
+<body>
+
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="pre-container">
+            <div class="spinner">
+                <div class="double-bounce1"></div>
+                <div class="double-bounce2"></div>
+            </div>
+        </div>
+    </div>
+    <!-- end Preloader -->
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <nav class="navbar navbar-above navbar-expand-lg mx-auto">
+            <div class="container-fluid">
+                <div class="navbar-nav">
+                    <a class="nav-link nav-1 active" href="#">About me</a>
+                </div>
+                <a class="navbar-brand"><img src="resources/logo_1.png" alt="Daniel Madeira"></a>
+                <div class="navbar-nav">
+                    <a class="nav-link nav-2" href="#">Portfolio</a>
+                </div>
+            </div>
+        </nav>
+    </nav>
+    <nav class="navbar-under">test</nav>
+
+    <!-- Main Content Area -->
+    <div class="main-container">
+        <div id="content">
+            <div class="container about-container
+ border-5 h-100">
+    <div class="row">
+        <div class="col-md-6 djz">
+            <div class="row">
+                <div class="copymark">
+                    <p>&copy;</p>
+                </div>
+            </div>
+            <img src="resources/djz.png" class="img-fluid border-5" alt="To the moon and back." />
+        </div>
+        <div class="col-md-5 about-content">
+            <div class="row about-1">
+                <h3><%= data.userQuery %></h3>
+                <h5>I'm a freshly graduated Junior Full-Stack Developer.</h5>
+                <div class="h-30"></div>
+                <% if(data.loggedIn){ %>
+                    <h2> You are logged in as : <%= data.username %></h2>
+                
+                <%}%>
+                <% data.searchResults.forEach(result=>{ %>
+                    <li> <%= result %></li>
+                <% }) %>
+                <ul class="social-ul">
+                    <li class="box-social"><a href="https://www.denzqree.com/curriculum.pdf" target="_blank"><i class="fas fa-coffee"></i></a></li>
+                    <li class="box-social"><a href="https://www.buymeacoffee.com/denzqree" target="_blank"><i class="fas fa-beer"></i></a></li>
+                    <li class="box-social"><a href="https://www.github.com/denzqree" target="_blank"><i class="fab fa-github-square"></i></a></li>
+                    <li class="box-social"><a href="https://www.linkedin.com/in/vdanielmadeira" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+                    <li class="box-social"><a href="https://www.instagr.am/denzqree" target="_blank"><i class="fab fa-instagram"></i></a></li>
+                    <li class="box-social"><a href="https://www.twitter.com/denzqree" target="_blank"><i class="fab fa-twitter"></i></a></li>
+                    <li class="box-social"><a href="https://www.twitch.tv/denzqree" target="_blank"><i class="fab fa-twitch"></i></a></li>
+                </ul>
+            </div>
+
+            <div class="row about-2" style="display:none">
+                <h3>This is another about content</h3>
+            </div>
+        </div>
+        <div class="col-md-1">
+            <a href="#down">Scroll</a>
+        </div>
+    </div>
+</div>
+        </div>
+    </div>
+
+
+    <!-- Footer -->
+    <footer class="footer-upper"></footer>
+    <footer class="footer-main">
+        <p class="copyright">
+            2021 © Daniel Madeira (Visitors :&nbsp;
+        <!--<?php include 'php/hitcount.php'; ?>-->
+        )</p>
+    </footer>
+    <!-- Video Background -->
+    <video autoplay muted loop id="background-video">
+        <source src="resources/code.mp4" type="video/mp4">
+    </video>
+</body>
+
+</html>

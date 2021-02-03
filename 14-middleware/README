@@ -1,0 +1,2 @@
+The middleware is the code that gets
+executed between the user request and the server.

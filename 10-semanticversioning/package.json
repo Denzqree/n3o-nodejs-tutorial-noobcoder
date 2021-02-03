@@ -1,0 +1,17 @@
+{
+  "name": "10-semanticversioning",
+  "version": "1.0.0",
+  "description": "semantic versioning tutorial",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "n3o_",
+  "license": "ISC",
+  "dependencies": {
+    "lodash": "^4.17.20" //major.minor.patch
+                         //^4.x.x download minor and patches
+                         //~4.17.x
+                         //none guarantees no updates
+  }
+}
